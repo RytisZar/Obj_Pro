@@ -5,6 +5,8 @@ Konteinerių testavimas: Išmatuota patobulintos v0.4 realizacijos veikimo spart
  2. std::list
  3. std::deque
 
+Rezultatų išvados: programa greičiausiai veikia su **std::vector** konteineriu ir atlieka visas funkcija efektyviausiai bei greičiausiai (rezultatus galima pamatyti ***vector_test.png***),skaitymo funkcija greičiau atliekama su **std::list** nei su **std::deque** konteineriu, tačiau programa, naudodama **std::list** studentų rūšiavimui didėjimo tvarka užtrunka labai ilgai ir yra labai laukiamas rezultatas (rezultatus galima pamatyti ***List_test.png*** ***Deque_test.png***).
+
 
 
 
