@@ -1,13 +1,17 @@
 # v0.5
 Konteinerių testavimas: Išmatuota patobulintos v0.4 realizacijos veikimo sparta priklausomai nuo naudojamų trijų skirtingų tipų konteinerių (t.y. tureti arba vieną programą su treis skirtingais konteineriais, arba tris skirtingas programas su atitinkamais konteineriais): 
 
- 1. std::vector
- 2. std::list
- 3. std::deque
+ 1. ***std::vector***
+ 2. ***std::list***
+ 3. ***std::deque***
 
-Rezultatų išvados: programa greičiausiai veikia su **std::vector** konteineriu ir atlieka visas funkcija efektyviausiai bei greičiausiai (rezultatus galima pamatyti ***vector_test.png***),skaitymo funkcija greičiau atliekama su **std::list** nei su **std::deque** konteineriu, tačiau programa, naudodama **std::list** studentų rūšiavimui didėjimo tvarka užtrunka labai ilgai ir yra labai laukiamas rezultatas (rezultatus galima pamatyti ***List_test.png*** ***Deque_test.png***).
+**GREICIO TIKRINIMAS**
+Programa greičiausiai veikia su **std::vector** konteineriu ir atlieka visas funkcija efektyviausiai bei greičiausiai (rezultatus galima pamatyti ***vector_test.png***),skaitymo funkcija greičiau atliekama su **std::list** nei su **std::deque** konteineriu, tačiau programa, naudodama **std::list** studentų rūšiavimui didėjimo tvarka užtrunka labai ilgai ir yra labai laukiamas rezultatas (rezultatus galima pamatyti ***List_test.png*** ***Deque_test.png***). 
 
+**CPU,RAM,VIRTUAL MEMORY tikrinimas**
+Veikiant programa su visais konteineriais apkrauna **CPU** procesorių labai panašiai, su visais konteineriais virš *90%*, mažiausiai **RAM** (Real Memory) išnaudoja ***std::vector*** konteineris, tik *392,7MB*, kas yra pakankamai mažai palyginus su kitais konteineriais, tuo tarpu ***std::list*** išnaudoja **RAM** *851,7MB*, o ***std::deque*** net *6,61GB*, mažiausiai **Virtual Memory** išnaudoja ***std::vector***, tačiau ir ***std::list*** labai panašiai (abu konteineriai *~33GB*), o ***std::deque*** konteineris daugiausiai net *40,38GB* (visus rezultatus galite pamtyti ***vector_cpu_mem.png***, ***list_cpu_mem.png*** ir ***deque_cpu_mem.png***).
 
+Taigi galime daryti išvadą, jog ***std::vector*** konteineris yra greičiausias, efektyviausias ir mažiausiai **RAM** bei **Virtual memory** išnaudojantis konteineris.
 
 
 # v0.4
